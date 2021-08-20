@@ -70,3 +70,5 @@ axios.get('{{ route('localization::changeLocale') }}',{
     }
   });
 ```
+
+<img src="/art/example-route.png">
