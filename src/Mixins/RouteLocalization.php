@@ -48,7 +48,7 @@ class RouteLocalization
     {
         return function ($option = []) {
             $options = array_merge([
-                'example' => true
+                'example' => false
             ], $option);
 
             $this->group(['as' => 'localization::'], function () use ($options) {
