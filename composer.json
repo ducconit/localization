@@ -1,28 +1,37 @@
 {
-    "name": "dnt/localization",
-    "description": "localization for laravel",
-    "type": "library",
-    "require": {
-        "php": "^7.3|^8.0",
-        "illuminate/routing": "^8.55",
-        "illuminate/support": "^8.55"
-    },
-    "autoload": {
-        "psr-4": {
-            "DNT\\Localization\\": "src/"
-        }
-    },
-    "authors": [
-        {
-            "name": "ducnt",
-            "email": "ducnt@sphoton.com"
-        }
-    ],
-    "extra": {
-        "laravel": {
-            "providers": [
-                "DNT\\Localization\\LocalizationServiceProvider"
-            ]
-        }
+  "name": "dnt/localization",
+  "description": "Localization for laravel",
+  "type": "library",
+  "keywords": [
+    "laravel location",
+    "location",
+    "localization",
+    "route localization"
+  ],
+  "license": "MIT",
+  "require": {
+    "php": "^7.3|^8.0",
+    "illuminate/routing": "^8.55",
+    "illuminate/support": "^8.55"
+  },
+  "autoload": {
+    "psr-4": {
+      "DNT\\Localization\\": "src/"
     }
+  },
+  "minimum-stability": "beta",
+  "prefer-stable": true,
+  "authors": [
+    {
+      "name": "ducnt",
+      "email": "ducnt@sphoton.com"
+    }
+  ],
+  "extra": {
+    "laravel": {
+      "providers": [
+        "DNT\\Localization\\LocalizationServiceProvider"
+      ]
+    }
+  }
 }
