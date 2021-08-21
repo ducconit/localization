@@ -72,3 +72,6 @@ axios.get('{{ route('localization::changeLocale') }}',{
 ```
 
 <img src="/art/example-route.png">
+
+### Chiết xuất file config
+`php artisan vendor:publish --tag=localization`

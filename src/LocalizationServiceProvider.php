@@ -30,6 +30,12 @@ class LocalizationServiceProvider extends ServiceProvider
     {
         $this->resolveMiddleware();
         Route::mixin(new RouteLocalization());
+
+        if ($this->app->runningInConsole()) {
+            $this->publishes([
+                LOCALIZATION_VENDOR_PATH . '/config' => $this->app->configPath()
+            ],'localization');
+        }
     }
 
     private function resolveMiddleware()
